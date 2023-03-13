@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/about.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/work.css">
+    <script src="/javascripts/script.js"></script>
+    <title>Web Fly - Build professional websites</title>
+</head>
+<body>
+    <nav>
+        <div class="topNav">
+            <div class="navLeft">
+                <a href="/" class="logoBtn">
+                <img src="images/logo.png" alt="">
+                </a>
+            </div>
+            <div class="navRight">
+                <ul>
+                    <a class="h-link" href="home.html">Home</a>
+                    <a class="h-link" href="about.html">About</a>
+                    <a href="mailto:webfly.official@gmail.com" class="cta">WORK WITH US</a>
+                </ul>
+                <div class="navbar-link" href="javascript:void(0);" onclick="myFunction()">
+                    <img class="navbar" id="open" src="images/bars-solid.png" alt="">
+                    <img class="navbar" id="close" src="images/close.png" alt="">
+    
+                </div>
+            </div>
+        </div>
+            <div id="extend">
+                <li>
+                    <a href="home.html">Home</a>
+                    <a href="about.html">About</a>
+                </li>
+            </div>
+    </nav>
+    <section id="about">
+        <div class="about-hero">
+            <div class="leftAbout">
+                <img data-aos="fade-right" src="images/about.png" alt="">
+            </div>
+            <div class="rightAbout" data-aos="fade-in">
+                <h1>About Web Fly</h1>
+                <p>We are small team of 4 friends to help businesses get more customers and grow their business
+                    by creating professional landing pages.
+                </p>
+                <a href="#story">
+                    <svg class="arrow-about" width="41" height="41" viewBox="0 0 41 41" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20.5" cy="20.5" r="20.5" fill="#FFB631" />
+                        <path d="M20.5003 10.25V30.75M20.5003 30.75L28.8521 22.9227M20.5003 30.75L12.1484 22.9227"
+                            stroke="url(#paint0_linear_222_142)" stroke-width="5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <defs>
+                            <linearGradient id="paint0_linear_222_142" x1="28.8521" y1="-26.9737" x2="15.0859" y2="45.3356"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#FFEFEF" />
+                                <stop offset="1" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div id="story">
+            <div class="leftStory">
+                <img src="images/books.png" alt="">
+            </div>
+            <div class="rightStory">
+                <h2>Our Story</h2>
+                <p>Our company founded in February 2022 in a small room and now we are operating in that small room. At the
+                    starting we have only one member to operate but in present we are a 4 members team.</p>
+            </div>
+        </div>
+        <div id="team">
+            <h2>Our Team</h2>
+            <div class="members">
+                <div class="member">
+                    <img src="images/sanath.png" alt="">
+                    <h3>Sanath K</h3>
+                    <p>Founder, Web Developer & <br> UI Designer </p>
+                </div>
+                <div class="member">
+                    <img src="images/vaishnav.png" alt="">
+                    <h3>Vaishnav CS</h3>
+                    <p>Co-Founder & Social Media <br> Manager </p>
+                </div>
+                <div class="member">
+                    <img src="images/shyam.png" alt="">
+                    <h3>Ganashyam M</h3>
+                    <p>Co-Founder & <br>
+                        Marketer </p>
+                </div>
+                <div class="member">
+                    <img src="images/nishanth.jpg" alt="">
+                    <h3>Nishanth A</h3>
+                    <p>Co-Founder & Graphic
+                        <br> Designer
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="mission">
+            <div class="leftMission">
+                <h2>Our Mission</h2>
+                <p>Our mission is to give all small businesses a online presence. So customers can discover your business
+                    and know more about your business. In this century a online presence is important. </p>
+                <a href="mailto:webfly.official@gmail.com" class="about-cta">WORK WITH US</a>
+            </div>
+            <div class="rightMission">
+                <img src="images/mission.png" alt="">
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="f-1">
+                <a class="footer-head">Links</a>
+                <a href="home.html" class="footer-links">Home</a>
+                <a href="about.html" class="footer-links">About Us</a>
+                <a href="mailto:webfly.official@gmail.com" class="footer-links">Contact Us</a>
+        </div>
+        <div class="f-1">
+                <a class="footer-head">We desgin professional landing pages.</a>                
+        </div>
+        <div class="f-1">
+                <a class="footer-head">Connect</a>
+                <a href="https://instagram.com/web__fly" target="_blank" class="footer-links">Instagram</a>
+                <a href="https://twitter.com/WebFly5" target="_blank" class="footer-links">Twitter</a>
+                <a href="https://www.linkedin.com/company/web-fly" target="_blank" class="footer-links">Linked In</a>
+                <a class="footer-links">&COPY;Copyright 2022</a>
+        </div>
+    </footer>
+</body>
+</html>
+<script>
+    window.addEventListener('scroll', function () {
+      let header = document.querySelector('nav');
+      let windowPosition = window.scrollY > 0;
+      header.classList.toggle('scrolling-active', windowPosition);
+    })
+  </script>

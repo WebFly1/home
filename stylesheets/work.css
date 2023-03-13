@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&display=swap');
+
+#work {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100vw;
+}
+
+.topW {
+    background: linear-gradient(269.23deg, #C269EC 0.76%, #FFAA10 75.75%);
+    height: 75vh;
+    padding: 0rem 8rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.wLeft {
+    width: 50%;
+}
+
+.wRight {
+    padding-left: 4rem;
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+}
+
+.wRight h1 {
+    color: white;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 4rem;
+    text-align: end;
+    margin-bottom: 0;
+}
+
+.wRight p {
+    color: white;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 2rem;
+    width: 29rem;
+    line-height: 3rem;
+    text-align: end;
+    margin-top: 0;
+}
+
+.bottomW {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    padding: 4rem 10rem;
+}
+
+.wBottomL {
+    width: 50%;
+    padding-left: 2rem;
+}
+
+.submitBtn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.submitBtn button {
+    background: #BD64FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    height: 3rem;
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.submitBtn button:hover {
+    background: #FFAA10;
+    transition: background 0.5s ease-in;
+}
+
+.wBottomL form {
+    width: fit-content;
+}
+
+.wBottomR {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wBottomR img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1300px) {
+    #work {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100vw;
+    }
+
+    .topW {
+        background: linear-gradient(180deg, #FFAA10 0%, #C168F1 146.34%);
+        height: 100%;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 6rem 4rem;
+    }
+
+    .wLeft {
+        height: 100%;
+        width: 100%;
+    }
+
+    .wLeft img {
+        margin-left: 3rem;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .wRight {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0rem 1rem;
+    }
+
+    .wBottomR {
+        display: none;
+    }
+
+    .wRight h1 {
+        font-size: 8rem;
+        line-height: 9rem;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .wRight p {
+        font-size: 4rem;
+        line-height: 5rem;
+        margin-top: 1rem;
+        text-align: center;
+        width: fit-content;
+    }
+}

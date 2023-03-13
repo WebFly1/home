@@ -1,0 +1,661 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&display=swap');
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0rem;
+  padding: 0rem;
+  overflow-x: hidden;
+  text-decoration: none;
+}
+
+.scrolling-active {
+  background-color: rgb(255, 234, 234);
+  transition: 0.5s ease-in;
+}
+
+/* header */
+nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 5rem;
+  background-color: transparent;
+  padding: 0rem 4rem;
+  position: fixed;
+  z-index: 2;
+}
+
+.topNav {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+}
+
+#extend {
+  display: none;
+}
+
+.navLeft {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navLeft img {
+  height: 4rem;
+  width: 4rem;
+}
+
+.navRight {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.h-link {
+  color: black;
+  font-family: 'Baloo Bhai 2', cursive;
+  text-decoration: none;
+  font-size: 1.4rem;
+  margin: 0rem 3rem;
+}
+
+.cta {
+  background: #BD64FF;
+  color: white;
+  font-family: 'Baloo Bhai 2', cursive;
+  text-decoration: none;
+  padding: 1rem 1rem;
+  border-radius: 100px;
+  font-size: 1rem;
+  filter: drop-shadow(10px 14px 24px rgba(0, 0, 0, 0.49));
+}
+
+.cta:hover {
+  background-color: #FFA500;
+  transition: background 0.5s ease;
+}
+
+.navbar {
+  display: none;
+}
+
+
+/* footer */
+#footer {
+  background-color: #FFAA10;
+  height: 13rem;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 3rem 0rem;
+}
+
+.footer-head {
+  color: black;
+  font-family: 'Baloo Bhai 2', cursive;
+  font-weight: bold;
+  font-size: 2rem;
+  width: 10rem;
+  text-decoration: none;
+}
+
+.f-1 {
+  display: flex;
+  flex-direction: column;
+  margin: 0rem 4rem;
+}
+
+.footer-links {
+  text-decoration: none;
+  font-family: 'Baloo Bhai 2', cursive;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* home */
+.home {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+#hero {
+  background: linear-gradient(286.54deg, #FFA500 20.8%, #BD64FF 94.73%);
+  height: 100%;
+  width: 100%;
+  padding: 0rem 4rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 90%;
+}
+
+.leftHero {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+.leftHero h1 {
+  color: white;
+  font-family: 'Baloo Bhai 2', cursive;
+  font-size: 4rem;
+  width: 32rem;
+  line-height: 4rem;
+  margin-left: 3rem;
+}
+
+.leftHero p {
+  color: white;
+  font-family: 'Baloo Bhai 2', cursive;
+  font-size: 2rem;
+  width: 29rem;
+  margin-top: -3rem;
+  line-height: 3rem;
+  margin-bottom: 1rem;
+}
+
+.rightHero {
+  width: 50%;
+  padding-top: 3rem;
+}
+
+.arrow {
+  z-index: 1;
+  position: absolute;
+  margin-left: 7rem;
+  margin-top: 1rem;
+}
+
+circle:hover {
+  fill: #BD64FF;
+  transition: fill 0.5s ease-in;
+}
+
+.cta-home {
+  background: #BD64FF;
+  color: white;
+  font-family: 'Baloo Bhai 2', cursive;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 1rem 1rem;
+  border-radius: 100px;
+  margin-right: 14rem;
+  filter: drop-shadow(10px 14px 24px rgba(0, 0, 0, 0.49));
+  width: 14rem;
+  display: flex;
+  justify-content: center;
+}
+
+.cta-home:hover {
+  background-color: #FFAA10;
+  transition: 0.5s ease;
+}
+
+.bottom {
+  height: 10%;
+  width: 100vw;
+}
+
+.wave {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+}
+
+
+/* Home Contents */
+#contents {
+  background-color: white;
+  height: 100%;
+}
+
+.benifits {
+  display: flex;
+  flex-direction: row;
+  padding: 0rem 4rem;
+  justify-content: space-evenly;
+  padding-top: 4rem;
+  height: fit-content;
+}
+
+.icon p {
+  font-family: 'Baloo Bhai 2', cursive;
+  color: black;
+  font-size: 1.5rem;
+  line-height: 40px;
+  text-align: center;
+  width: 7rem;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.line {
+  height: 0.2rem;
+  margin: 0rem 8rem;
+  background-color: black;
+}
+
+/* Why */
+.why {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 8rem;
+}
+
+.why h2 {
+  font-family: 'Baloo Bhai 2', cursive;
+  font-size: 3rem;
+  color: black;
+  width: 30rem;
+  text-align: center;
+  line-height: 50px;
+}
+
+.why p {
+  font-size: 2rem;
+  font-family: 'Baloo Bhai 2', cursive;
+  color: #484848;
+  text-align: left;
+  width: 50rem;
+  margin-top: -1rem;
+}
+
+/* Service */
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 0rem 4rem;
+  height: 100%;
+}
+
+.service img {
+  margin-bottom: 0;
+}
+
+.service p {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: black;
+  font-family: 'Baloo Bhai 2', cursive;
+  text-align: center;
+  width: 30rem;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1300px) {
+  #hero {
+    background: linear-gradient(343.84deg, #FFA500 7.7%, #BD64FF 96.99%);
+    height: 100%;
+    width: 100vw;
+  }
+
+  #close{
+    position: relative;
+    display: none;
+  }
+  
+  #open{
+    position: relative;
+    display: block;
+  }
+  
+  .content {
+    height: 100%;
+    width: 100vw;
+  }
+
+  .top {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 90%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .rightHero {
+    margin-top: 2rem;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    height: 60%;
+    padding-left: 4rem;
+  }
+
+  .rightHero img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .h-link {
+    display: none;
+  }
+
+  .navRight {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+  }
+
+  .navbar {
+    display: block;
+    height: 8rem;
+    width: 8rem;
+  }
+
+  .cta {
+    display: block;
+    width: 20rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    margin-right: 2rem;
+  }
+
+  .navLeft {
+    width: 20%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .navLeft img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+  }
+
+  .scrolling-active {
+    background-color: rgb(255, 234, 234);
+    transition: 0.5s ease-in;
+  }
+
+  nav {
+    height: fit-content;
+    padding: 2rem 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .logoBtn{
+    width: 100%;
+    height: 100%;
+  }
+
+  .leftHero h1 {
+    font-size: 8rem;
+    line-height: 9rem;
+    width: 60rem;
+    text-align: center;
+    margin-top: -12rem;
+    margin-bottom: 0;
+  }
+
+  .leftHero p {
+    font-size: 4rem;
+    line-height: 5rem;
+    margin-top: 1rem;
+    text-align: center;
+    width: 50rem;
+  }
+
+  .leftHero {
+    display: block;
+    padding-top: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    height: 40%;
+  }
+
+  .cta-home {
+    display: block;
+    width: 20rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    margin-left: 15rem;
+  }
+
+  .arrow {
+    height: 6rem;
+    width: 7rem;
+    margin-top: -6rem;
+    margin-left: 50rem;
+  }
+
+  .benifits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+    padding-top: 10rem;
+  }
+
+  .icon {
+    margin: 2rem 0rem;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icon svg {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+  }
+
+  .icon p {
+    font-size: 4rem;
+    text-align: center;
+    line-height: 5rem;
+    margin: 0;
+    width: 25rem;
+  }
+
+  .bottom {
+    height: 10%;
+    width: 100vw;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .wave {
+    position: relative;
+    width: 69rem;
+    margin-left: -4rem;
+    height: fit-content;
+    display: block;
+    left: 0;
+    bottom: -0.1rem;
+
+  }
+
+  .line {
+    display: block;
+    width: 100vw;
+    margin: 0rem 4rem;
+  }
+
+  .why {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 4rem;
+    width: 100vw;
+  }
+
+  .why h2 {
+    font-size: 5rem;
+    line-height: 5rem;
+    width: fit-content;
+  }
+
+  .why p {
+    font-size: 3.5rem;
+    text-align: center;
+    width: fit-content;
+  }
+
+  .service {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 4rem;
+  }
+
+  .service img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+  }
+
+  .service p {
+    font-size: 3.5rem;
+    width: fit-content;
+  }
+
+  /* footer */
+  #footer {
+    margin-top: 3rem;
+    background-color: #FFAA10;
+    height: 100%;
+    width: 70rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0rem;
+  }
+
+  .footer-head {
+    font-size: 4rem;
+    width: 25rem;
+    text-align: center;
+    margin: 3rem 0rem;
+    margin-bottom: 0rem;
+  }
+
+  .f-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links {
+    font-size: 3.5rem;
+  }
+
+  /* Nav Responsive */
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #extend {
+    display: none;
+    background-color: rgb(255, 234, 234);
+    justify-content: end;
+    width: 70rem;
+    margin-left: -10rem;
+    padding: 0rem 10rem;
+    padding-top: 0rem;
+    height: 22rem;
+    margin-top: -12rem;
+    z-index: -1;
+    padding-top: 15rem;
+  }
+
+  #extend li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #extend li a {
+    text-decoration: none;
+    font-size: 4rem;
+    color: black;
+    font-family: 'Baloo Bhai 2', cursive;
+    width: fit-content;
+  }
+
+  .scrolling-active {
+    background-color: rgb(255, 234, 234);
+    transition: 0.5s ease-in;
+  }
+}
+
+/* Thank you page */
+.thank {
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+}
+
+.thank img {
+  height: 10rem;
+  width: 15rem;
+}
+
+.thank h1 {
+  font-family: 'Baloo Bhai 2', cursive;
+  font-size: 5rem;
+  margin-top: 10rem;
+}
+
+.thank p {
+  font-size: 3rem;
+  text-align: center;
+  font-family: 'Baloo Bhai 2', cursive;
+  width: 40rem;
+}
