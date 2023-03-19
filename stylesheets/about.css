@@ -331,7 +331,7 @@
 
     .about-hero {
         background: linear-gradient(344.21deg, #FFA500 2.68%, #BD64FF 95.48%);
-        width: 100vw;
+        width: 70rem;
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -340,7 +340,6 @@
     }
 
     .leftAbout {
-        width: 100vw;
         display: flex;
         padding-left: 5rem;
     }
@@ -352,7 +351,6 @@
     }
 
     .rightAbout {
-        width: 100vw;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -385,6 +383,8 @@
         display: flex;
         flex-direction: column;
         padding-top: 5rem;
+        align-items: center;
+        width: 70rem;
     }
 
     .leftStory {
@@ -422,7 +422,7 @@
 
     #team {
         padding: 0rem 4rem;
-        width: 100vw;
+        width: 70rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -437,12 +437,10 @@
     .members {
         display: flex;
         flex-direction: column;
-        width: 100vw;
         align-items: center;
     }
 
     .member {
-        width: 100vw;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -486,7 +484,15 @@
         max-width: 70%;
         height: auto;
     }
-
+    #mission{
+        padding: 0rem 4rem;
+        width: 70rem;
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        align-items: center;
+    }
     .leftMission {
         width: 100vw;
         display: flex;
@@ -503,7 +509,7 @@
     .leftMission p {
         font-size: 3.5rem;
         text-align: center;
-        width: fit-content;
+        width: 50rem;
     }
 
     .about-cta {
@@ -627,9 +633,4 @@
         height: 5rem;
         width: 5rem;
     }
-
-
-
-
-
 }
