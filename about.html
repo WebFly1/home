@@ -6,22 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheets/style.css">
     <link rel="stylesheet" href="stylesheets/about.css">
-    <link rel="stylesheet" href="stylesheets/style.css">
-    <link rel="stylesheet" href="stylesheets/work.css">
-    <script src="javascripts/script.js"></script>
     <title>Web Fly - Build professional websites</title>
 </head>
 <body>
     <nav>
         <div class="topNav">
             <div class="navLeft">
-                <a href="/" class="logoBtn">
+                <a href="index.html" class="logoBtn">
                 <img src="images/logo.png" alt="">
                 </a>
             </div>
             <div class="navRight">
                 <ul>
-                    <a class="h-link" href="home.html">Home</a>
+                    <a class="h-link" href="index.html">Home</a>
                     <a class="h-link" href="about.html">About</a>
                     <a href="mailto:webfly.official@gmail.com" class="cta">WORK WITH US</a>
                 </ul>
@@ -34,7 +31,7 @@
         </div>
             <div id="extend">
                 <li>
-                    <a href="home.html">Home</a>
+                    <a href="index.html">Home</a>
                     <a href="about.html">About</a>
                 </li>
             </div>
@@ -138,6 +135,21 @@
 </body>
 </html>
 <script>
+       function myFunction() {
+  var x = document.getElementById("extend");
+  var close = document.getElementById("close");
+  var open = document.getElementById("open");
+  if ( x.style.display === "block") {
+    close.style.display = "none";
+    open.style.display = "block";
+    x.style.display = "none";
+  } else {
+    close.style.display = "block";
+    open.style.display = "none";
+    x.style.display = "block";
+  }
+}
+
     window.addEventListener('scroll', function () {
       let header = document.querySelector('nav');
       let windowPosition = window.scrollY > 0;
